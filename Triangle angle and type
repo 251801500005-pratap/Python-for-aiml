@@ -1,0 +1,17 @@
+a1 = float(input("Enter first angle: "))
+a2 = float(input("Enter second angle: "))
+
+a3 = 180 - (a1 + a2)
+print("Third angle:", a3)
+
+# Check right-angled
+if a1 == 90 or a2 == 90 or a3 == 90:
+    print("Right-angled triangle")
+else:
+    print("Not right-angled")
+
+# Check isosceles (at least two equal angles)
+if a1 == a2 or a2 == a3 or a1 == a3:
+    print("Isosceles triangle")
+else:
+    print("Not isosceles")
