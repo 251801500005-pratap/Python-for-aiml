@@ -1,0 +1,15 @@
+days = int(input("Enter number of days: "))
+
+years = days // 365
+remaining = days % 365
+
+months = remaining // 30
+remaining = remaining % 30
+
+weeks = remaining // 7
+remaining_days = remaining % 7
+
+print("Years:", years)
+print("Months:", months)
+print("Weeks:", weeks)
+print("Days:", remaining_days)
